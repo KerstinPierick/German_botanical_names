@@ -1,0 +1,25 @@
+---
+title: "Random german botanical names"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## English
+
+We wrote a random generator for gramatically correct and mostly realistic German plant names in R. Please read script.R for details. Most word components are real.
+
+## German
+
+Dies ist ein Zufallsgenerator für grammatikalisch korrekte und beinahe realistische deutsche
+Pflanzennamen in R. In script.R steht, wie wir das gemacht haben. Die meisten verwendeten Wortbstandteile kommen wirklich in echten Pflanzennamen vor. Vorschläge für weitere Wortbestandteile sind äußerst willkommen. Hier sind ein paar Beispiele.
+
+# Examples/Beispiele
+
+```{r}
+data <- read.csv("examples.csv")
+
+as.character(data$x)
+```

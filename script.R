@@ -23,19 +23,24 @@ gender_ender <- c(m = "r ", w = " ", n = "s ")
 ad1 <- c("Riesen", "Krumm", "Spitz", "Schmal", "Glatt", "Breit", "Zart", "Gold", "Blut", 
          "Schleim", "Geschlitzt", "Fieder", "Stink", "Hart", "Stumpf", "Hohl", "Lang", 
          "Kurz", "Flausch", "Platt", "Büschel", "Filz", "Dünn", "Dick", "Horn", "Grob",
-         "Rost", "Mehl")
+         "Rost", "Mehl", "Steif", "Flach", "Rau", "Kraus", "Weich", "Bleich", "Blass",
+         "Gilb", "Flaum")
 
 # second halves of composed adjectives
 ad2 <- c("blütige", "blättrige", "fruchtige", "schuppige", "haarige", "dornige", "zottige", 
          "samige", "stängelige", "knollige", "wurzige", "drüsige", "blasige", "schotige",
-         "stachelige", "rispige", "doldige", "wirtelige", "ästige", "borstige")
+         "stachelige", "rispige", "doldige", "wirtelige", "ästige", "borstige", "tüpfelige",
+         "lippige", "köpfige")
 
 # complete adjectives
 ad_whole <- c("Wohlriechende", "Prächtige", "Erhabene", "Gemeine", "Echte", "Falsche", 
               "Stinkende", "Aufrechte", "Niedere", "Kriechende", "Rankende", "Gefleckte", 
               "Gewöhnliche", "Edle", "Bittersüße", "Bewimperte", "Verwachsengrifflige",
               "Bittere", "Punktierte", "Gerippte", "Stumpfe", "Verarmte", "Hässliche",
-              "Gekrümmte", "Übelriechende", "Zierliche", "Liegende", "Glanzlose", "Fremde")
+              "Gekrümmte", "Übelriechende", "Zierliche", "Liegende", "Glanzlose", "Fremde",
+              "Harzige", "Scharfe", "Sprossende", "Zerschlitzte", "Entferntfiedrige", 
+              "Feingliedrige", "Starre", "Schmierige", "Bucklige", "Wilde", "Stattliche",
+              "Dachziegelige", "Verschiedenfarbige", "Kantige", "Gekielte", "Nickende")
 
 # first halves of composed nouns
 nom1 <- c("Wurm", "Bocks", "Schafs", "Esels", "Ross", "Ochsen", "Kälber", "Kröten", "Hunds",
@@ -50,7 +55,9 @@ nom1 <- c("Wurm", "Bocks", "Schafs", "Esels", "Ross", "Ochsen", "Kälber", "Krö
           "Trauer", "Socken", "Zitter", "Scheiden", "Blasen", "Vogelfuß", "Wimpern", 
           "Panzer", "Venus", "Läuse", "Floh", "Zottel", "Enten", "Glieder", "Hänge", 
           "Gnaden", "Frosch", "Glocken", "Fieber", "Filz", "Ferkel", "Finger", "Schlamm", 
-          "Eichel", "Brand", "Brachsen", "Borst", "Bein", "Bauern", "Adonis", "Edel")
+          "Eichel", "Brand", "Brachsen", "Borst", "Bein", "Bauern", "Adonis", "Edel", 
+          "Keulen", "Flach", "Stech", "Zwerg", "Schmerz", "Wanzen", "Duft", "Wunder", 
+          "Flatter")
 
 # male second halves of composed nouns
 nom2_m <- c("lauch", "rettich", "kopf", "schlund", "kropf", "schwingel", "klau", 
@@ -62,7 +69,8 @@ nom2_m <- c("lauch", "rettich", "kopf", "schlund", "kropf", "schwingel", "klau",
             "schöterich", "ampfer", "klee", "günsel", "regen", "flieder", "gamander", 
             "wedel", "schaft", "bock", "schlauch", "ziest", "gundermann", "hanf", "fuß", 
             "löffel", "gagel", "finger", "hut", "krokus", "dill", "same", "weiderich", 
-            "ginster", "harnisch", "rachen", "helm", "ehrenpreis")
+            "ginster", "harnisch", "rachen", "helm", "ehrenpreis", "wacholder", "stab",
+            "stängel", "kolben")
 
 # female second halves of composed nouns
 nom2_w <- c("rute", "wicke", "wurz", "simse", "binse", "birne", "beere", "nuss", "rapunzel",
@@ -70,11 +78,11 @@ nom2_w <- c("rute", "wicke", "wurz", "simse", "binse", "birne", "beere", "nuss",
             "schote", "rübe", "kralle", "blume", "rose", "nelke", "rauke", "raute", "zunge",
             "kresse", "winde", "pimpernuss", "bohne", "quitte", "lilie", "schelle", "mistel",
             "klaue", "kirsche", "traube", "zwenke", "minze", "aster", "zichorie", "hirse",
-            "eiche", "nessel", "pest")
+            "eiche", "nessel", "pest", "palme", "erbse", "rebe", "mispel")
 
 # neutral second halves of composed nouns
 nom2_n <- c("röschen", "kraut", "blatt", "maul", "kissen", "blümchen", "ohr", "auge", "moos",
-            "radieschen", "gras", "horn", "löckchen", "pfötchen")
+            "radieschen", "gras", "horn", "glöckchen", "pfötchen")
 
 
 

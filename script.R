@@ -22,55 +22,71 @@ gender_ender <- c(m = "r ", w = " ", n = "s ")
 # first halves of composed adjectives
 ad1 <- c("Riesen", "Krumm", "Spitz", "Schmal", "Glatt", "Breit", "Zart", "Gold", "Blut", 
          "Schleim", "Geschlitzt", "Fieder", "Stink", "Hart", "Stumpf", "Hohl", "Lang", 
-         "Kurz", "Flausch", "Platt", "Büschel", "Filz", "Dünn", "Dick", "Horn", "Grob",
+         "Kurz", "Platt", "Büschel", "Filz", "Dünn", "Dick", "Horn", "Grob",
          "Rost", "Mehl", "Steif", "Flach", "Rau", "Kraus", "Weich", "Bleich", "Blass",
-         "Gilb", "Flaum")
+         "Gilb", "Flaum", "Matt", "Furchen")
+
+ad1_f <- c("Flausch", "Maden")
 
 # second halves of composed adjectives
 ad2 <- c("blütige", "blättrige", "fruchtige", "schuppige", "haarige", "dornige", "zottige", 
          "samige", "stängelige", "knollige", "wurzige", "drüsige", "blasige", "schotige",
          "stachelige", "rispige", "doldige", "wirtelige", "ästige", "borstige", "tüpfelige",
-         "lippige", "köpfige")
+         "lippige", "köpfige", "rosettige", "fleischige", "hornige", "wulstige")
+
+ad2_f <- c("lurchige", "flauschige")
 
 # complete adjectives
 ad_whole <- c("Wohlriechende", "Prächtige", "Erhabene", "Gemeine", "Echte", "Falsche", 
               "Stinkende", "Aufrechte", "Niedere", "Kriechende", "Rankende", "Gefleckte", 
               "Gewöhnliche", "Edle", "Bittersüße", "Bewimperte", "Verwachsengrifflige",
-              "Bittere", "Punktierte", "Gerippte", "Stumpfe", "Verarmte", "Hässliche",
-              "Gekrümmte", "Übelriechende", "Zierliche", "Liegende", "Glanzlose", "Fremde",
-              "Harzige", "Scharfe", "Sprossende", "Zerschlitzte", "Entferntfiedrige", 
-              "Feingliedrige", "Starre", "Schmierige", "Bucklige", "Wilde", "Stattliche",
-              "Dachziegelige", "Verschiedenfarbige", "Kantige", "Gekielte", "Nickende")
+              "Bittere", "Punktierte", "Gerippte", "Stumpfe", "Verarmte", "Gekrümmte", 
+              "Übelriechende", "Zierliche", "Liegende", "Glanzlose", "Fremde", "Harzige", 
+              "Scharfe", "Sprossende", "Zerschlitzte", "Entferntfiedrige", "Feingliedrige", 
+              "Starre", "Schmierige", "Bucklige", "Wilde", "Stattliche", "Dachziegelige", 
+              "Verschiedenfarbige", "Kantige", "Gekielte", "Nickende", "Steife", "Wuchernde",
+              "Matte", "Duftarme", "Brennende", "Gute", "Unförmige", "Weiche", "Feindliche",
+              "Angenehme", "Üppige", "Zusammengedrückte", "Wulstige")
+
+ad_whole_f <- c("Hässliche")
 
 # first halves of composed nouns
 nom1 <- c("Wurm", "Bocks", "Schafs", "Esels", "Ross", "Ochsen", "Kälber", "Kröten", "Hunds",
           "Katzen", "Schweine", "Hexen", "Mutter", "Schwiegermutter", "Stink", "Schleim",
           "Faul", "Pest", "Teufels", "Satans", "Rosetten", "Gift", "Büchsen", "Schierlings",
           "Klauen", "Kratz", "Toll", "Zauber", "Brech", "Magen", "Lungen", "Leber", "Nieren",
-          "Milz", "Bart", "Hart", "Franzosen", "Schein", "Todes", "Flausch", "Krebs", 
-          "Lümmel", "Schling", "Stachel", "Bären", "Riesen", "Hasen", "Knaben", "Jungfern",
-          "Würge", "Wutz", "Watz", "Öl", "Fett", "Sau", "Eber", "Zitzen", "Krähen", 
-          "Bastard", "Maul", "Mäuse", "Judas", "Leim", "Bingel", "Nackt", "Nagel", "Moschus", 
-          "Abbiss", "Sumpf", "Borst", "Riemen", "Puff", "Bohnen", "Sauer", "Bitter", "Horst", 
-          "Trauer", "Socken", "Zitter", "Scheiden", "Blasen", "Vogelfuß", "Wimpern", 
-          "Panzer", "Venus", "Läuse", "Floh", "Zottel", "Enten", "Glieder", "Hänge", 
-          "Gnaden", "Frosch", "Glocken", "Fieber", "Filz", "Ferkel", "Finger", "Schlamm", 
-          "Eichel", "Brand", "Brachsen", "Borst", "Bein", "Bauern", "Adonis", "Edel", 
-          "Keulen", "Flach", "Stech", "Zwerg", "Schmerz", "Wanzen", "Duft", "Wunder", 
-          "Flatter")
+          "Milz", "Bart", "Hart", "Franzosen", "Schein", "Todes", "Krebs", "Schling", 
+          "Stachel", "Bären", "Riesen", "Hasen", "Knaben", "Jungfern", "Würge", "Öl", "Fett", 
+          "Sau", "Eber", "Krähen", "Bastard", "Maul", "Mäuse", "Judas", "Leim", "Bingel", 
+          "Nackt", "Nagel", "Moschus", "Abbiss", "Sumpf", "Borst", "Riemen", "Puff", 
+          "Bohnen", "Sauer", "Bitter", "Horst", "Trauer", "Socken", "Zitter", "Scheiden", 
+          "Blasen", "Vogelfuß", "Wimpern", "Panzer", "Venus", "Läuse", "Floh", "Zottel", 
+          "Enten", "Glieder", "Hänge", "Gnaden", "Frosch", "Glocken", "Fieber", "Filz", 
+          "Ferkel", "Finger", "Schlamm", "Eichel", "Brand", "Brachsen", "Borsten", "Bein", 
+          "Bauern", "Adonis", "Edel", "Keulen", "Flach", "Stech", "Zwerg", "Schmerz", 
+          "Wanzen", "Duft", "Wunder", "Flatter", "Trompeten", "Troll", "Tüpfel", "Wucher", 
+          "Süß", "Sichel", "Hammer", "Pillen", "Schlenken", "Furchen", "Essig", "Nattern", 
+          "Laser", "Lab", "Zickzack", "Rauch", "Feuer", "Johannis", "Gummi", "Habichts",
+          "Frauen", "Fisch", "Feder", "Erdbeer", "Titanen", "Raspel", "Bockshorn", "Becher",
+          "Besen", "Algen", "Liebes", "Lieb", "Gurken")
+
+nom1_f <- c("Wutz", "Watz", "Flausch", "Zitzen", "Lümmel", "Aas")
 
 # male second halves of composed nouns
 nom2_m <- c("lauch", "rettich", "kopf", "schlund", "kropf", "schwingel", "klau", 
             "schierling", "kohl", "fenchel", "kümmel", "pfeffer", "dost", "quirl", "zahn", 
-            "topf", "bart", "salat", "ling", "würger", "queller", "quendel", "brech", 
+            "topf", "bart", "salat", "ling", "queller", "quendel", "brech", 
             "schwanz", "lattich", "becher", "ampfer", "stöckel", "apfel", "knöterich", 
             "abbiss", "bärlapp", "kolben", "weizen", "sporn", "schnabel", "pippau", 
             "portulak", "porst", "farn", "rhabarber", "senf", "hafer", "schwaden", "halm", 
-            "schöterich", "ampfer", "klee", "günsel", "regen", "flieder", "gamander", 
+            "schöterich", "klee", "günsel", "regen", "flieder", "gamander", 
             "wedel", "schaft", "bock", "schlauch", "ziest", "gundermann", "hanf", "fuß", 
             "löffel", "gagel", "finger", "hut", "krokus", "dill", "same", "weiderich", 
             "ginster", "harnisch", "rachen", "helm", "ehrenpreis", "wacholder", "stab",
-            "stängel", "kolben")
+            "stängel", "lolch", "baum", "könig", "biss", "hals", "rauch", 
+            "heinrich", "mantel", "spargel", "spinat", "dingel")
+
+nom2_m_f <- c("würger")
 
 # female second halves of composed nouns
 nom2_w <- c("rute", "wicke", "wurz", "simse", "binse", "birne", "beere", "nuss", "rapunzel",
@@ -78,12 +94,19 @@ nom2_w <- c("rute", "wicke", "wurz", "simse", "binse", "birne", "beere", "nuss",
             "schote", "rübe", "kralle", "blume", "rose", "nelke", "rauke", "raute", "zunge",
             "kresse", "winde", "pimpernuss", "bohne", "quitte", "lilie", "schelle", "mistel",
             "klaue", "kirsche", "traube", "zwenke", "minze", "aster", "zichorie", "hirse",
-            "eiche", "nessel", "pest", "palme", "erbse", "rebe", "mispel")
+            "eiche", "nessel", "pest", "palme", "erbse", "rebe", "mispel", "petersilie",
+            "gurke", "kartoffel", "schere", "braunelle")
 
 # neutral second halves of composed nouns
 nom2_n <- c("röschen", "kraut", "blatt", "maul", "kissen", "blümchen", "ohr", "auge", "moos",
-            "radieschen", "gras", "horn", "glöckchen", "pfötchen")
+            "radieschen", "gras", "horn", "glöckchen", "pfötchen", "vöglein", "schwänzchen",
+            "schötchen", "kätzchen", "hähnlein")
 
+wordlist <- list(ad1 = ad1, ad2 = ad2, ad_whole = ad_whole,
+                 nom1 = nom1, nom2_m = nom2_m, nom2_n = nom2_n, nom2_w = nom2_w)
+
+wordlist_sorted <- lapply(wordlist, sort)
+lapply(wordlist_sorted, function(x) x[duplicated(x)])
 
 
 # function that randomly choses one element of vector x
